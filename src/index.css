@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Tajawal", sans-serif;
+  
+  --color-primary: #ff4d6d;
+  --color-secondary: #f8f5f2;
+  --color-accent: #ffb3c1;
+  --color-dark: #2d2d2d;
+  --color-card: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-secondary text-dark overflow-x-hidden antialiased;
+    direction: rtl;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/90 backdrop-blur-[10px] border-b border-primary/10;
+}
+
+.card-minimal {
+  @apply bg-card border border-primary/5 rounded-[20px] shadow-[0_4px_15px_rgba(0,0,0,0.03)];
+}
+
+.testimonial-minimal {
+  @apply bg-[#fdf2f4] p-4 rounded-xl border-r-4 border-primary text-sm;
+}
